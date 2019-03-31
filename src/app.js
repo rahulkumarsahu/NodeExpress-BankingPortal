@@ -12,4 +12,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => res.render('index', { title: 'index'}));
 
-app.listen(3000);
+app.listen(3000, () => console.log('Project is running on port'));
